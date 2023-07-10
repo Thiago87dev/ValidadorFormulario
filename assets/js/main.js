@@ -69,7 +69,7 @@ class ValidaFormulario{
     }
     
     static validaUsuario(campo){
-        const usuario = campo.value
+        const usuario = campo.value.trim()
         let valid = true
         if(usuario.length < 3 || usuario.length > 12){
             ValidaFormulario.criaErro(campo, 'Usuario deve ter entre 3 e 12 caracteres')
