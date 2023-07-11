@@ -43,5 +43,3 @@ class ValidaCPF {
         return this.novoCPF === this.cpfLimpo
     }
 }
-
-
